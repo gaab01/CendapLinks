@@ -79,14 +79,20 @@ body {
 .banner {
     height: 180px;
     width: 100%;
-    /* Placeholder for building image, using dark gray tone matching header */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('assets/banner_placeholder.jpg');
-    background-color: #555;
+    background: url('assets/banner.png');
     background-size: cover;
     background-position: center;
     position: relative;
-    border-bottom: 5px solid #444;
-    /* Dark bar visual separator */
+}
+
+.banner::after {
+    content: '';
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: #4a4a4a;
 }
 
 /* Top profile container overlap */
@@ -99,22 +105,21 @@ body {
 }
 
 .logo-container {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     background: var(--white);
     border-radius: 50%;
     margin: 0 auto 0.5rem;
-    padding: 5px;
-    border: 8px solid #4a4a4a;
-    /* Thick dark gray border */
+    padding: 0px;
+    border: 6px solid #5a5a5a;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .logo {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: auto;
     object-fit: contain;
 }
 
