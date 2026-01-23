@@ -169,6 +169,7 @@ body {
 .links-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 0.8rem;
     padding: 0 2rem 2rem;
     flex-grow: 1;
@@ -178,17 +179,17 @@ body {
 
 .link-btn {
     display: block;
+    width: 85%;
+    max-width: 320px;
     background-color: var(--primary-red);
     color: var(--white);
     text-decoration: none;
     padding: 0.8rem 1rem;
     border-radius: 50px;
-    /* Pill shape */
     text-align: center;
     font-weight: 700;
     font-size: 1rem;
     box-shadow: 0 4px 0px #9f161f;
-    /* Hard shadow for depth */
     transition: all 0.2s ease;
     text-transform: uppercase;
 }
