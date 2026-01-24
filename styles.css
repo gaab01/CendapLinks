@@ -51,7 +51,7 @@ body {
     width: 200%;
     height: 100%;
     border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.15);
     z-index: 0;
     pointer-events: none;
 }
@@ -63,7 +63,7 @@ body {
     width: 150%;
     height: 80%;
     border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.15);
     z-index: 0;
     pointer-events: none;
 }
@@ -178,25 +178,43 @@ body {
 }
 
 .link-btn {
-    display: block;
-    width: 85%;
-    max-width: 320px;
-    background-color: var(--primary-red);
-    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 90%;
+    max-width: 340px;
+    background-color: var(--white);
+    color: var(--text-color);
     text-decoration: none;
-    padding: 0.8rem 1rem;
-    border-radius: 50px;
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
     text-align: center;
-    font-weight: 700;
-    font-size: 1rem;
-    box-shadow: 0 4px 0px #9f161f;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     transition: all 0.2s ease;
-    text-transform: uppercase;
+}
+
+.link-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .link-btn:active {
-    transform: translateY(2px);
-    box-shadow: 0 2px 0px #9f161f;
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.link-btn .icon {
+    flex-shrink: 0;
+}
+
+.link-btn img.icon {
+    height: 24px;
+    width: 24px;
+    object-fit: contain;
 }
 
 /* Footer */
