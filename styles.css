@@ -237,3 +237,66 @@ body {
     text-transform: uppercase;
     box-shadow: var(--shadow);
 }
+
+/* Mobile Optimizations */
+@media (max-width: 380px) {
+    .title {
+        font-size: 1.6rem;
+    }
+
+    .subtitle {
+        font-size: 0.8rem;
+    }
+
+    .link-btn {
+        padding: 0.9rem 1.2rem;
+        font-size: 0.85rem;
+        gap: 8px;
+    }
+
+    .link-btn img.icon {
+        height: 20px;
+        width: 20px;
+    }
+
+    .social-icon {
+        font-size: 1.6rem;
+    }
+
+    .social-links {
+        gap: 1.5rem;
+    }
+
+    .links-container {
+        padding: 0 1rem 2rem;
+    }
+
+    .footer-pill {
+        font-size: 0.7rem;
+        padding: 0.4rem 1rem;
+    }
+}
+
+/* Touch improvements */
+@media (hover: none) and (pointer: coarse) {
+    .link-btn:active {
+        transform: scale(0.98);
+        background-color: #f5f5f5;
+    }
+
+    .social-icon:active {
+        transform: scale(0.9);
+    }
+}
+
+/* Safe area for notch devices (iPhone X+) */
+@supports (padding: max(0px)) {
+    .container {
+        padding-bottom: max(1rem, env(safe-area-inset-bottom));
+    }
+
+    .links-container {
+        padding-left: max(1rem, env(safe-area-inset-left));
+        padding-right: max(1rem, env(safe-area-inset-right));
+    }
+}
