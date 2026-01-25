@@ -275,6 +275,10 @@ body {
         font-size: 0.7rem;
         padding: 0.4rem 1rem;
     }
+
+    .banner::after {
+        bottom: 35px;
+    }
 }
 
 /* Touch improvements */
