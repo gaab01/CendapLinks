@@ -211,7 +211,7 @@ body {
 
 /* Footer */
 .footer {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0;
     display: flex;
     justify-content: center;
     position: relative;
@@ -286,7 +286,7 @@ body {
 /* Safe area for notch devices (iPhone X+) */
 @supports (padding: max(0px)) {
     .container {
-        padding-bottom: max(1rem, env(safe-area-inset-bottom));
+        padding-bottom: env(safe-area-inset-bottom);
     }
 
     .links-container {
