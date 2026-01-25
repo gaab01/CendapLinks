@@ -88,7 +88,7 @@ body {
 .banner::after {
     content: '';
     position: absolute;
-    bottom: 30px;
+    bottom: px;
     left: 0;
     right: 0;
     height: 4px;
@@ -277,7 +277,7 @@ body {
     }
 
     .banner::after {
-        bottom: 40px;
+        bottom: 38px;
     }
 }
 
