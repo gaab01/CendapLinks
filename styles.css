@@ -46,7 +46,7 @@ body {
 /* Background Curve Effect */
 .bg-curve {
     position: absolute;
-    top: 35%;
+    top: 320px;
     left: -50%;
     width: 200%;
     height: 100%;
@@ -92,7 +92,7 @@ body {
     left: 0;
     right: 0;
     height: 4px;
-    background-color: #4a4a4a;
+    background-color: #5a5a5a;
 }
 
 /* Top profile container overlap */
