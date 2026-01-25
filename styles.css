@@ -211,7 +211,7 @@ body {
 
 /* Footer */
 .footer {
-    padding: 0.5rem 0;
+    padding: 0.5rem 0 0.2rem;
     display: flex;
     justify-content: center;
     position: relative;
