@@ -219,12 +219,12 @@ body {
 
 /* Footer */
 .footer {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     display: flex;
     justify-content: center;
     position: relative;
     z-index: 2;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
 }
 
 .footer-pill {
